@@ -131,7 +131,7 @@
       } = files[0];
       message.innerHTML = "Loading ffmpeg-core.js";
       await ffmpeg.load();
-      message.innerHTML = "Start transcoding";
+      message.innerHTML = "Started transcoding";
       ffmpeg.FS("writeFile", name, await fetchFile(files[0]));
       // const a = "audio.mp3";
       // const ab = "audio/mp3";
